@@ -5,7 +5,7 @@ module.exports = ({ env }) => ({
       providerOptions: {
         host: env("EMAIL_SMTP_HOST"),
         port: env.int("EMAIL_SMTP_PORT"),
-        secure: false, // ⚠️ para STARTTLS debe ser false
+        secure: true, // ⚠️ para STARTTLS debe ser false
         auth: {
           user: env("EMAIL_SMTP_USER"),
           pass: env("EMAIL_SMTP_PASS"),
