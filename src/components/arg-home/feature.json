@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_arg_home_features",
+  "info": {
+    "displayName": "feature",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

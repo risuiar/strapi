@@ -1,0 +1,79 @@
+{
+  "kind": "singleType",
+  "collectionName": "arg_homes",
+  "info": {
+    "singularName": "arg-home",
+    "pluralName": "arg-homes",
+    "displayName": "arg-home"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {
+    "i18n": {
+      "localized": true
+    }
+  },
+  "attributes": {
+    "hero": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "arg-home.hero",
+      "repeatable": false
+    },
+    "slider": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "arg-home.slide",
+      "repeatable": false
+    },
+    "services": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "arg-home.services",
+      "repeatable": false
+    },
+    "whyChooseUs": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "arg-home.why-choose-us",
+      "repeatable": false
+    },
+    "testimonials": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "arg-home.testimonials",
+      "repeatable": false
+    },
+    "contact": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "arg-home.contact",
+      "repeatable": false
+    }
+  }
+}

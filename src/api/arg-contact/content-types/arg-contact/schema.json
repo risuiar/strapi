@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "arg_contacts",
+  "info": {
+    "singularName": "arg-contact",
+    "pluralName": "arg-contacts",
+    "displayName": "arg-contact"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "name": {
+      "type": "string"
+    },
+    "email": {
+      "type": "email"
+    },
+    "phone": {
+      "type": "string"
+    },
+    "type": {
+      "type": "string"
+    },
+    "message": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    }
+  }
+}

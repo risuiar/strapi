@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_arg_home_contact_items",
+  "info": {
+    "displayName": "contact_item",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "content": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

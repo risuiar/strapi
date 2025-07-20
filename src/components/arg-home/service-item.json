@@ -1,0 +1,25 @@
+{
+  "collectionName": "components_arg_home_service_items",
+  "info": {
+    "displayName": "service_item",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "icon": {
+      "type": "string"
+    },
+    "feature": {
+      "type": "component",
+      "component": "arg-home.feature",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

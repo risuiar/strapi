@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_arg_home_testimonials",
+  "info": {
+    "displayName": "testimonials",
+    "icon": "user"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "testimonialItem": {
+      "type": "component",
+      "component": "arg-home.testimonial-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

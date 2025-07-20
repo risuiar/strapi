@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_arg_home_why_points",
+  "info": {
+    "displayName": "why_point",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    },
+    "icon": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

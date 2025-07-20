@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_arg_home_slides",
+  "info": {
+    "displayName": "slide",
+    "icon": "picture"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "slides": {
+      "type": "component",
+      "component": "arg-home.slides-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

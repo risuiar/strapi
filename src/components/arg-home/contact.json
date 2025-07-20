@@ -1,0 +1,19 @@
+{
+  "collectionName": "components_arg_home_contacts",
+  "info": {
+    "displayName": "contact",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "contacts": {
+      "type": "component",
+      "component": "arg-home.contact-item",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}

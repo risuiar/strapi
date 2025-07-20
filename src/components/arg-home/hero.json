@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_arg_home_heroes",
+  "info": {
+    "displayName": "hero",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "moto": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "subtitle": {
+      "type": "text"
+    },
+    "ctaText": {
+      "type": "string"
+    },
+    "ctaLink": {
+      "type": "string"
+    }
+  },
+  "config": {}
+}

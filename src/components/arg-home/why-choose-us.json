@@ -1,0 +1,22 @@
+{
+  "collectionName": "components_arg_home_why_chooseuses",
+  "info": {
+    "displayName": "whyChooseUs",
+    "icon": "dashboard"
+  },
+  "options": {},
+  "attributes": {
+    "sectionTitle": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "why_point": {
+      "type": "component",
+      "component": "arg-home.why-point",
+      "repeatable": true
+    }
+  },
+  "config": {}
+}
