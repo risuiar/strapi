@@ -3,17 +3,17 @@ module.exports = ({ env }) => ({
     config: {
       provider: "nodemailer",
       providerOptions: {
-        host: env("SMTP_HOST", "smtp.zoho.eu"),
-        port: env.int("SMTP_PORT", 465),
+        host: env("EMAIL_SMTP_HOST"),
+        port: env.int("EMAIL_SMTP_PORT"),
+        secure: false, // ⚠️ para STARTTLS debe ser false
         auth: {
-          user: env("SMTP_USERNAME"),
-          pass: env("SMTP_PASSWORD"),
+          user: env("EMAIL_SMTP_USER"),
+          pass: env("EMAIL_SMTP_PASS"),
         },
-        secure: true,
       },
       settings: {
-        defaultFrom: env("SMTP_USERNAME"),
-        defaultReplyTo: env("SMTP_USERNAME"),
+        defaultFrom: env("EMAIL_SMTP_USER"),
+        defaultReplyTo: env("EMAIL_SMTP_USER"),
       },
     },
   },
