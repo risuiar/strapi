@@ -1,11 +1,24 @@
+"use strict";
+
 module.exports = {
   async afterCreate(event) {
-    const { result } = event;
+    try {
+      const { result } = event;
 
-    await strapi.plugins["email"].services.email.send({
-      to: "rvoegeli@gmail.com", // o el destinatario fijo
-      subject: "Nueva contacto recibido",
-      text: `${result.name} envio un mensaje, ${result.phone} ${result.email} ${result.message} ${result.language}`,
-    });
+      await strapi.plugins["email"].services.email.send({
+        to: "rvoegeli@gmail.com",
+        subject: "Nuevo contacto recibido",
+        text: `
+          Nombre: ${result.name}
+          Email: ${result.email}
+          Teléfono: ${result.phone}
+          Tipo: ${result.type}
+          Mensaje: ${result.message}
+          Idioma: ${result.language}
+        `,
+      });
+    } catch (err) {
+      strapi.log.error("❌ Error al enviar el email:", err);
+    }
   },
 };
