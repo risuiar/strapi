@@ -58,4 +58,41 @@ Feel free to check out the [Strapi GitHub repository](https://github.com/strapi/
 
 ---
 
+## 📧 Contact Email Configuration
+
+To configure the destination email for contact form submissions, set the following environment variable in your `.env` file:
+
+```
+ARG_DESTINATION_EMAIL=your-destination@example.com
+```
+
+When a new contact is created, an email will be sent to this address with the following format:
+
+**Plain text:**
+
+```
+Nuevo contacto de: [Nombre]
+Email: [Email]
+Teléfono: [Teléfono]
+Mensaje: [Mensaje]
+Idioma: [Idioma]
+```
+
+**HTML:**
+
+```
+<h3>Nuevo contacto recibido</h3>
+<p><strong>Nombre:</strong> [Nombre]</p>
+<p><strong>Email:</strong> [Email]</p>
+<p><strong>Teléfono:</strong> [Teléfono]</p>
+<p><strong>Mensaje:</strong></p>
+<p>[Mensaje]</p>
+<hr>
+<p><em>Idioma del formulario: [Idioma]</em></p>
+```
+
+Replace the values in brackets with the actual data submitted by the user.
+
+---
+
 <sub>🤫 Psst! [Strapi is hiring](https://strapi.io/careers).</sub>

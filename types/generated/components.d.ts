@@ -36,6 +36,34 @@ export interface ArgHomeFeature extends Struct.ComponentSchema {
   };
 }
 
+export interface ArgHomeFounder extends Struct.ComponentSchema {
+  collectionName: 'components_arg_home_founders';
+  info: {
+    displayName: 'founder';
+  };
+  attributes: {
+    description: Schema.Attribute.Text;
+    founder_credential: Schema.Attribute.Component<
+      'arg-home.founder-credential',
+      true
+    >;
+    image: Schema.Attribute.Media<'images' | 'files' | 'videos' | 'audios'>;
+    name: Schema.Attribute.String;
+    title: Schema.Attribute.String;
+  };
+}
+
+export interface ArgHomeFounderCredential extends Struct.ComponentSchema {
+  collectionName: 'components_arg_home_founder_credentials';
+  info: {
+    displayName: 'founder_credential';
+    icon: 'bulletList';
+  };
+  attributes: {
+    credential: Schema.Attribute.String;
+  };
+}
+
 export interface ArgHomeHero extends Struct.ComponentSchema {
   collectionName: 'components_arg_home_heroes';
   info: {
@@ -45,6 +73,7 @@ export interface ArgHomeHero extends Struct.ComponentSchema {
   attributes: {
     ctaLink: Schema.Attribute.String;
     ctaText: Schema.Attribute.String;
+    description: Schema.Attribute.Text;
     moto: Schema.Attribute.String;
     subtitle: Schema.Attribute.Text;
     title: Schema.Attribute.String;
@@ -146,6 +175,7 @@ export interface ArgHomeWhyChooseUs extends Struct.ComponentSchema {
   };
   attributes: {
     description: Schema.Attribute.Text;
+    founder: Schema.Attribute.Component<'arg-home.founder', false>;
     sectionTitle: Schema.Attribute.String;
     why_point: Schema.Attribute.Component<'arg-home.why-point', true>;
   };
@@ -232,6 +262,8 @@ declare module '@strapi/strapi' {
       'arg-home.contact': ArgHomeContact;
       'arg-home.contact-item': ArgHomeContactItem;
       'arg-home.feature': ArgHomeFeature;
+      'arg-home.founder': ArgHomeFounder;
+      'arg-home.founder-credential': ArgHomeFounderCredential;
       'arg-home.hero': ArgHomeHero;
       'arg-home.service-item': ArgHomeServiceItem;
       'arg-home.services': ArgHomeServices;
