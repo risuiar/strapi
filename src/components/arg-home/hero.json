@@ -20,6 +20,9 @@
     },
     "ctaLink": {
       "type": "string"
+    },
+    "description": {
+      "type": "text"
     }
   },
   "config": {}

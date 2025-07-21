@@ -1,21 +1,20 @@
 {
-  "collectionName": "components_arg_home_testimonial_items",
+  "collectionName": "components_arg_home_founders",
   "info": {
-    "displayName": "testimonial_item",
-    "icon": "user"
+    "displayName": "founder"
   },
   "options": {},
   "attributes": {
     "name": {
       "type": "string"
     },
-    "position": {
+    "title": {
       "type": "string"
     },
-    "quote": {
+    "description": {
       "type": "text"
     },
-    "photo": {
+    "image": {
       "type": "media",
       "multiple": false,
       "allowedTypes": [
@@ -24,6 +23,11 @@
         "videos",
         "audios"
       ]
+    },
+    "founder_credential": {
+      "type": "component",
+      "component": "arg-home.founder-credential",
+      "repeatable": true
     }
   },
   "config": {}

@@ -19,9 +19,25 @@ module.exports = {
       // Intentamos enviar el email
       strapi.plugins["email"].services.email
         .send({
-          to: "rvoegeli@gmail.com",
+          to: process.env.ARG_DESTINATION_EMAIL,
           subject: "Nuevo contacto recibido",
-          text: `${result.name} envió un mensaje, ${result.phone}, ${result.email}, ${result.message}, idioma: ${result.language}`,
+          text: `
+            Nuevo contacto de: ${result.name}
+            Email: ${result.email}
+            Teléfono: ${result.phone}
+            Mensaje: ${result.message}
+            Idioma: ${result.language}
+          `,
+          html: `
+            <h3>Nuevo contacto recibido</h3>
+            <p><strong>Nombre:</strong> ${result.name}</p>
+            <p><strong>Email:</strong> ${result.email}</p>
+            <p><strong>Teléfono:</strong> ${result.phone}</p>
+            <p><strong>Mensaje:</strong></p>
+            <p>${result.message}</p>
+            <hr>
+            <p><em>Idioma del formulario: ${result.language}</em></p>
+          `,
         })
         .then(() => {
           console.log("✅ Email enviado correctamente");

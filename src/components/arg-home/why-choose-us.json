@@ -12,6 +12,11 @@
     "description": {
       "type": "text"
     },
+    "founder": {
+      "type": "component",
+      "component": "arg-home.founder",
+      "repeatable": false
+    },
     "why_point": {
       "type": "component",
       "component": "arg-home.why-point",
