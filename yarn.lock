@@ -2145,7 +2145,7 @@
     qs "6.11.1"
     sift "16.0.1"
 
-"@strapi/plugin-cloud@^5.18.1":
+"@strapi/plugin-cloud@5.18.1":
   version "5.18.1"
   resolved "https://registry.yarnpkg.com/@strapi/plugin-cloud/-/plugin-cloud-5.18.1.tgz#1fb799021c223915e535391098ff583cadabad0a"
   integrity sha512-Dv6KhpqbVGtesosjHQIRyJaHPw1JheGIvmn0bHAE90lHfp6Qou9yeakOcdFMWVpm2LZ5PjQjSYb39hqmU7n4eg==
@@ -2154,7 +2154,7 @@
     "@strapi/icons" "2.0.0-rc.29"
     react-intl "6.6.2"
 
-"@strapi/plugin-users-permissions@^5.18.1":
+"@strapi/plugin-users-permissions@5.18.1":
   version "5.18.1"
   resolved "https://registry.yarnpkg.com/@strapi/plugin-users-permissions/-/plugin-users-permissions-5.18.1.tgz#cbe2a253abd6ffb6ac2df7a72e67377dc99f434c"
   integrity sha512-rJ0PMszKPtbZgEuG8r/LGL4svX5veky30dKj5V7bz9mJASuyA40ztVsgSXLcO3gC4dajfow7JPqpa4d/FG/YNg==
@@ -2179,7 +2179,7 @@
     url-join "4.0.1"
     yup "0.32.9"
 
-"@strapi/provider-email-nodemailer@^5.18.1":
+"@strapi/provider-email-nodemailer@5.18.1":
   version "5.18.1"
   resolved "https://registry.yarnpkg.com/@strapi/provider-email-nodemailer/-/provider-email-nodemailer-5.18.1.tgz#b0b739abe162f8b1ff76d8c51ea6e07da2c319d6"
   integrity sha512-r5HmJICk3SNbCKDs+miwOauPDWUKi0DLlYYZbx9Svp1sTdk0MP0sRJnYNWC0ERCtcRmP8RAjaM+6gMAfb65PaQ==
@@ -2220,7 +2220,7 @@
     react-redux "8.1.3"
     yup "0.32.9"
 
-"@strapi/strapi@^5.18.1":
+"@strapi/strapi@5.18.1":
   version "5.18.1"
   resolved "https://registry.yarnpkg.com/@strapi/strapi/-/strapi-5.18.1.tgz#609816aaaf68698c8c380b09860cdbb1a620d04c"
   integrity sha512-PfNC72aa74C1nhxU0BgLz/fBCd8cJckEy7RI4JdvjPH9tAVJykqGx8xNn1oEJUatP7Hw8PgnABy50O4lmTxbzA==
