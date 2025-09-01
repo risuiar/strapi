@@ -4,9 +4,10 @@ nixpkgs = ["openssl", "cacert"]
 [variables]
 YARN_CACHE_FOLDER = "/tmp/.yarn-cache"
 SWC_BINARY_PATH = ""
+NODE_ENV = "production"
 
 [phases.install]
-cmds = ["yarn install --frozen-lockfile --prefer-offline false --cache-folder /tmp/.yarn-cache"]
+cmds = ["yarn install --frozen-lockfile --production=false --cache-folder /tmp/.yarn-cache"]
 
 [phases.build]
 cmds = ["yarn build"]
