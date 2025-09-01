@@ -2,13 +2,14 @@
 nixpkgs = ["openssl", "cacert"]
 
 [variables]
-NPM_CONFIG_CACHE = "/tmp/.npm"
+YARN_CACHE_FOLDER = "/tmp/.yarn-cache"
+SWC_BINARY_PATH = ""
 
 [phases.install]
-cmds = ["npm ci --cache /tmp/.npm --prefer-offline=false"]
+cmds = ["yarn install --frozen-lockfile --prefer-offline false --cache-folder /tmp/.yarn-cache"]
 
 [phases.build]
-cmds = ["npm run build"]
+cmds = ["yarn build"]
 
 [start]
-cmd = "npm start"
+cmd = "yarn start"
