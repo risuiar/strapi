@@ -1,2 +1,14 @@
 [phases.setup]
 nixpkgs = ["openssl", "cacert"]
+
+[variables]
+NPM_CONFIG_CACHE = "/tmp/.npm"
+
+[phases.install]
+cmds = ["npm ci --cache /tmp/.npm --prefer-offline=false"]
+
+[phases.build]
+cmds = ["npm run build"]
+
+[start]
+cmd = "npm start"
