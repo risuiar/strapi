@@ -22,7 +22,7 @@
     "@strapi/strapi": "5.18.1",
     "@strapi/admin": "5.18.1",
     "@strapi/content-manager": "5.18.1",
-    "date-fns": "^3.6.0",
+    "date-fns": "^2.30.0",
     "fs-extra": "^10.0.0",
     "mime-types": "^2.1.27",
     "pg": "8.8.0",
@@ -34,6 +34,9 @@
   "engines": {
     "node": ">=18.0.0 <=22.x.x",
     "npm": ">=6.0.0"
+  },
+  "resolutions": {
+    "date-fns": "^2.30.0"
   },
   "strapi": {
     "uuid": "48ed35db-52cc-4ec5-ae90-abd8f0383097",
