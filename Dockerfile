@@ -11,4 +11,4 @@ COPY ./ .
 RUN yarn build
 EXPOSE 1337
 RUN chmod +x ./entrypoint.sh
-CMD ["/bin/bash", "-c", "./entrypoint.sh && yarn develop"]
+CMD ["sh", "-c", "yarn build && yarn start"]
