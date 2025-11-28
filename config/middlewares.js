@@ -1,6 +1,10 @@
 module.exports = [
   'strapi::logger',
   'strapi::errors',
+  {
+    name: 'global::root-redirect',
+    config: {},
+  },
   'strapi::security',
   'strapi::cors',
   'strapi::poweredBy',
