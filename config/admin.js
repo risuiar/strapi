@@ -13,8 +13,8 @@ module.exports = ({ env }) => ({
   secrets: {
     encryptionKey: env('ENCRYPTION_KEY'),
   },
-  url: env('STRAPI_ADMIN_BACKEND_URL', env('URL', 'http://localhost:1337')),
-  serveAdminPanel: env.bool('SERVE_ADMIN', true),
+  url: env('STRAPI_ADMIN_BACKEND_URL'),
+  serveAdminPanel: true,
   flags: {
     nps: env.bool('FLAG_NPS', true),
     promoteEE: env.bool('FLAG_PROMOTE_EE', true),
