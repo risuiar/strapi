@@ -76,6 +76,14 @@
         "videos",
         "audios"
       ]
+    },
+    "customDate": {
+      "type": "date",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      }
     }
   }
 }
