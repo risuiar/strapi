@@ -55,6 +55,16 @@
       "component": "arg-home.why-choose-us",
       "repeatable": false
     },
+    "pricing": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "arg-home.pricing",
+      "repeatable": false
+    },
     "testimonials": {
       "type": "component",
       "pluginOptions": {
