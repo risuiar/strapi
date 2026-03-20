@@ -40,6 +40,7 @@ module.exports = createCoreController(
         name: result.name,
         email: result.email,
         phone: result.phone,
+        address: result.address,
         message: result.message,
         language: result.language,
       };
@@ -59,7 +60,7 @@ module.exports = createCoreController(
             to: process.env.ARG_DESTINATION_EMAIL,
             subject: "Nuevo contacto recibido",
             html,
-            text: `Nuevo contacto de: ${result.name}\nEmail: ${result.email}\nTeléfono: ${result.phone}\nMensaje: ${result.message}\nIdioma: ${result.language}`,
+            text: `Nuevo contacto de: ${result.name}\nEmail: ${result.email}\nTeléfono: ${result.phone}\nDirección: ${result.address}\nMensaje: ${result.message}\nIdioma: ${result.language}`,
           }),
         5000
       )

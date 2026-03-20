@@ -26,6 +26,9 @@
     "message": {
       "type": "text"
     },
+    "address": {
+      "type": "string"
+    },
     "language": {
       "type": "string"
     }
