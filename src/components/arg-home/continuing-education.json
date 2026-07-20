@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_arg_home_continuing_educations",
+  "info": {
+    "displayName": "Continuing Education & Courses",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "courses": {
+      "type": "component",
+      "component": "arg-home.course-item",
+      "repeatable": true,
+      "min": 4,
+      "max": 4
+    }
+  },
+  "config": {}
+}

@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_arg_home_course_items",
+  "info": {
+    "displayName": "Course Item",
+    "icon": "book"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "text": {
+      "type": "text"
+    }
+  },
+  "config": {}
+}

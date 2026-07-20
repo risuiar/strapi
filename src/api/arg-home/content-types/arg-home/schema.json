@@ -45,6 +45,16 @@
       "component": "arg-home.services",
       "repeatable": false
     },
+    "continuingEducation": {
+      "type": "component",
+      "pluginOptions": {
+        "i18n": {
+          "localized": true
+        }
+      },
+      "component": "arg-home.continuing-education",
+      "repeatable": false
+    },
     "whyChooseUs": {
       "type": "component",
       "pluginOptions": {
