@@ -12,9 +12,7 @@
     "courses": {
       "type": "component",
       "component": "arg-home.course-item",
-      "repeatable": true,
-      "min": 4,
-      "max": 4
+      "repeatable": true
     }
   },
   "config": {}
