@@ -4,3 +4,10 @@
 build/
 node_modules/
 data/
+.env
+.env.*
+!.env.example
+.strapi/
+.strapi-updater.json
+nixpacks.toml
+README.md
