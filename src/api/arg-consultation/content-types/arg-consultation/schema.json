@@ -23,14 +23,6 @@
         }
       }
     },
-    "description": {
-      "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
     "intro": {
       "type": "text",
       "pluginOptions": {
@@ -83,14 +75,6 @@
     },
     "requestReceivedDescription": {
       "type": "text",
-      "pluginOptions": {
-        "i18n": {
-          "localized": true
-        }
-      }
-    },
-    "price": {
-      "type": "string",
       "pluginOptions": {
         "i18n": {
           "localized": true
