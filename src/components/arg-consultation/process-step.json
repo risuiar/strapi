@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_arg_consultation_process_steps",
+  "info": {
+    "displayName": "Process step",
+    "description": "A localized step in the online consultation booking process"
+  },
+  "options": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
